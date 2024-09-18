@@ -1,0 +1,126 @@
+.footer {
+  &__main {
+    text-align: center;
+    padding: 5.9375rem .9375rem 7.0625rem .9375rem;
+  }
+
+  &__top {
+    max-width: 39.375rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5625rem;
+  }
+
+  &__bottom {
+    position: relative;
+    padding-top: 2.375rem;
+    width: 100%;
+    max-width: 75rem;
+    margin: 2.375rem auto 0 auto;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, rgba(164, 8, 6, 0) 0%, #a40806 46.35%, rgba(164, 8, 6, 0) 100%);
+    }
+
+    &_label {
+      letter-spacing: 0.05em;
+    }
+  }
+}
+
+.top-footer {
+  &__socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_item {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: '';
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        border-radius: 50%;
+        transition: var(--transition);
+        pointer-events: none;
+      }
+
+      @media (any-hover: hover) {
+        &:hover {
+          &::before {
+            box-shadow: 0 0 35px var(--white);
+          }
+        }
+      }
+    }
+  }
+
+  &__sponsors {
+    padding-top: 1.6875rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_item {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        z-index: 0;
+        content: '';
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 35px;
+        height: 35px;
+        background: transparent;
+        border-radius: 50%;
+        filter: blur(40px);
+        -webkit-filter: blur(40px);
+        transition: var(--transition);
+        pointer-events: none;
+      }
+
+      @media (any-hover: hover) {
+        &:hover {
+          &::before {
+            background: var(--red-600);
+          }
+        }
+      }
+    }
+
+    &_icon {
+      position: relative;
+      z-index: 2;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer {
+    &__top {
+      gap: 1.25rem;
+    }
+  }
+
+  .top-footer {
+    &__socials, &__sponsors {
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+  }
+}
