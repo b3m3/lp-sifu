@@ -1,0 +1,15 @@
+/* import general */
+
+@import './modules/fonts';
+@import './general.scss';
+// @import '../../node_modules/swiper/swiper.scss';
+
+/* IMPORT COMPONENTS */
+
+/* header */
+@import 'components/header';
+
+/* footer */
+@import 'components/footer';
+
+/* IMPORT MODULES */
