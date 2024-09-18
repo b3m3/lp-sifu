@@ -20,6 +20,8 @@
   --red-600: #A40806;
   --grey-100: #FCFBF9;
   --grey-100-05: rgba(217, 217, 217, 0.5);
+  --grey-200-05: rgba(242, 243, 255, 0.5);
+  --transition: .3s ease;
 }
 
 /* settings */
@@ -57,6 +59,10 @@ body {
   max-width: 1230px;
   margin: 0 auto;
   padding: 0 .9375rem;
+
+  &.big {
+    max-width: 1370px;
+  }
 }
 
 button {

@@ -1,7 +1,68 @@
 <header class="header">
-  <div class="container">
+  <div class="container big">
     <div class="header__main">
 
+      <div class="header__col">
+        <a class="header__logo" href="#">
+          <img src="@img/header/img_logo_s.webp" alt="logo">
+        </a>
+      </div>
+
+      <div class="header__col menu-col">
+        <!-- NAVBAR -->
+
+        <nav class="header__nav">
+          <ul class="header__nav_list">
+            <li class="header__nav_item">
+              <a class="header__nav_link" href="#">Home</a>
+            </li>
+            <li class="header__nav_item"></li>
+              <a class="header__nav_link" href="#">About</a>
+            </li>
+            <li class="header__nav_item"></li>
+              <a class="header__nav_link" href="#">News</a>
+            </li>
+            <li class="header__nav_item"></li>
+              <a class="header__nav_link" href="#">Gallery</a>
+            </li>
+            <li class="header__nav_item"></li>
+              <a class="header__nav_link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__buttons">
+          <!-- LANG -->
+
+          <div class="header__buttons_lang lang-header">
+            <button class="lang-header__button">
+              <span class="lang-header__lang">EN</span>
+
+              <svg class="lang-header__icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L6 6L11 1" stroke="white" stroke-width="2" />
+              </svg>
+            </button>
+
+            <ul class="lang-header__list">
+              <li class="lang-header__item">EN</li>
+              <li class="lang-header__item">UA</li>
+              <li class="lang-header__item">ES</li>
+            </ul>
+          </div>
+
+          <!-- BUY NOW BTN -->
+
+          <button class="header__buttons_buy">
+            Buy now
+          </button>
+        </div>
+      </div>
+
+      <div class="header__col">        
+        <button class="header__buttons_hamburger menu-hamburger">
+          <i></i><i></i><i></i>
+        </button>
+      </div>
     </div>
   </div>
 </header>
