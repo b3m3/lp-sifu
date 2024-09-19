@@ -6,20 +6,6 @@
     padding: 6.875rem 0 10.625rem 0;
   }
 
-  &__blure {
-    position: absolute;
-    content: '';
-    z-index: 3;
-    top: 1.9375rem;
-    left: calc(50% - 280px);
-    width: 321px;
-    height: 321px;
-    background: var(--red-600);
-    filter: blur(300px);
-    -webkit-filter: blur(300px);
-    border-radius: 50%;
-  }
-
   &__top {
     position: relative;
     z-index: 4;
