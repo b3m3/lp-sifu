@@ -1,8 +1,10 @@
 /* import general */
 
-@import './modules/fonts';
-@import './general.scss';
-// @import '../../node_modules/swiper/swiper.scss';
+@import 'modules/fonts';
+@import 'general';
+
+@import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/modules/pagination.scss';
 
 /* IMPORT COMPONENTS */
 
@@ -11,6 +13,9 @@
 
 /* hero */
 @import 'components/hero';
+
+/* path */
+@import 'components/path';
 
 /* footer */
 @import 'components/footer';
