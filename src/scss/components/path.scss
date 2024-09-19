@@ -89,27 +89,10 @@
     background: var(--red-600);
     border: none;
   }
+
+  .swiper-pagination {
+    top: unset !important;
+    bottom: 2.5rem !important;
+  }
 }
 
-.swiper-pagination {
-  z-index: 3;
-  top: unset !important;
-  bottom: 40px !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2.5rem;
-}
-
-.swiper-pagination-bullet {
-  width: 20px;
-  height: 20px;
-  background: transparent;
-  border: 1px solid rgba(217, 217, 217, 0.5);
-  opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-  background: rgba(217, 217, 217, 0.5);
-  border: none;
-}

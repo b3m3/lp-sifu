@@ -83,7 +83,7 @@ h2 {
   text-transform: uppercase;
 
   @media screen and (max-width: 1230px) {
-    font-size: calc(42px + calc(75 - 42) * ((100vw - 320px) / (1230 - 320)));
+    font-size: calc(36px + calc(75 - 36) * ((100vw - 320px) / (1230 - 320)));
   }
 }
 

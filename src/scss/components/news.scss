@@ -61,7 +61,7 @@
   &__right {
     display: flex;
     flex-direction: column;
-    gap: 3.25rem;
+    gap: 3.125rem;
     overflow-y: scroll;
 
     &::-webkit-scrollbar {
@@ -156,7 +156,7 @@
   }
 
   &__link {
-    margin-top: .875rem;
+    margin-top: 13px;
     display: inline-flex;
     align-items: center;
     gap: .4375rem;
