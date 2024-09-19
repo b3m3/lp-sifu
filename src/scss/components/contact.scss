@@ -1,0 +1,131 @@
+.contact {
+  &__main {
+    position: relative;
+    padding: 1.5rem .9375rem 0 .9375rem;
+  }
+
+  &__blure {
+    position: absolute;
+    content: '';
+    top: 4.6875rem;
+    left: calc(50% - 160px);
+    width: 20rem;
+    height: 20rem;
+    filter: blur(18.75rem);
+    -webkit-filter: blur(18.75rem);
+    background: var(--red-600);
+    border-radius: 50%;
+  }
+
+  &__title {
+    text-align: center;
+    position: relative;
+    z-index: 3;
+  }
+
+  &__form {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.75rem;
+    width: 100%;  
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 3.75rem;
+  }
+
+  &__row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  &__input {
+    height: 5rem;
+    width: 100%;
+    border: 2px solid var(--red-600);
+    background: transparent;
+    outline: unset;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--white);
+
+    @media screen and (max-width: 1230px) {
+      font-size: calc(24px + calc(32 - 24) * ((100vw - 320px) / (1230 - 320)));
+    }
+
+    &::placeholder {
+      color: var(--white);
+    }
+
+    &:focus {
+      &::placeholder {
+        color: transparent;
+      }
+    }
+  }
+
+  &__checkbox {
+    position: absolute;
+    min-width: 38px;
+    height: 38px;
+    opacity: .1;
+    cursor: pointer;
+    opacity: 0;
+
+    &:checked ~ .contact__checkmark::before {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+
+  &__checkmark {
+    position: relative;
+    pointer-events: none;
+    display: block;
+    min-width: 38px;
+    height: 38px;
+    border: 2px solid var(--red-600);
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      width: 75%;
+      height: 75%;
+      background: var(--red-600);
+      transition: transform var(--transition);
+    }
+  }
+
+  &__link {
+    color: var(--red-600);
+    text-decoration: underline;
+  }
+
+  &__submit {
+    border: 4px solid var(--red-600);
+    margin: 0 auto;
+    width: 100%;
+    max-width: 10.75rem;
+    height: 2.875rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: var(--red-600);
+    transition: var(--transition);
+    
+    @media (any-hover: hover) {
+      &:hover {
+        background: var(--red-600);
+        box-shadow: 0 1px 50px 0 rgba(164, 8, 6, 0.75);
+        color: #111;
+      }
+    }
+  }
+}

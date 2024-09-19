@@ -1,11 +1,11 @@
 import Swiper from 'swiper'
-import { Pagination, Navigation } from 'swiper/modules'
+import { Pagination, Navigation, Parallax } from 'swiper/modules'
 
 export const swiperPath = () => {
 	const swiper = new Swiper('.path__swiper', {
-		modules: [Pagination],
+		modules: [Pagination, Parallax],
 		loop: true,
-
+		parallax: true,
 		pagination: {
 			el: '.swiper-pagination',
 			clickable: true,
