@@ -26,6 +26,20 @@
     padding: 6.25rem 0 5.625rem 0;
   }
 
+  &__blure {
+    position: absolute;
+    content: '';
+    z-index: 3;
+    bottom: -35%;
+    left: calc(50% - 280px);
+    width: 20.0625rem;
+    height: 20.0625rem;
+    background: var(--red-600);
+    filter: blur(250px);
+    -webkit-filter: blur(250px);
+    border-radius: 50%;
+  }
+
   &__background {
     position: absolute;
     top: 0;
