@@ -2,16 +2,17 @@
   <div class="contact__main">
 
     <i class="contact__blure"></i>
+    <div class="contact__modal"></div>
 
     <h2 class="contact__title">NEWSLETTER • 通讯</h2>
 
     <form class="contact__form" action="#">
       <div class="contact__row">
-        <input class="contact__input" type="email" name="email" id="email" placeholder="Enter e-mail address">
+        <input class="contact__input" type="email" name="email" id="email" placeholder="Enter e-mail address" required>
       </div>
 
       <div class="contact__row">
-        <input class="contact__checkbox" type="checkbox" name="checkbox" id="checkbox">
+        <input class="contact__checkbox" type="checkbox" name="checkbox" id="checkbox" required>
         <span class="contact__checkmark"></span>
         <label for="checkbox">
           I agree to the <a class="contact__link" href="#">privacy policy</a> and agree to receive occasional news from Kepler and its studios
@@ -19,7 +20,12 @@
       </div>
 
       <div class="contact__row">
-        <button class="contact__submit">subscribe</button>
+        <button class="contact__submit">
+          <span>subscribe</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" width="40" height="40" style="shape-rendering: auto; display: block; background: transparent;" xmlns:xlink="http://www.w3.org/1999/xlink"><g><circle stroke-dasharray="164.93361431346415 56.97787143782138" r="35" stroke-width="10" stroke="#a40806" fill="none" cy="50" cx="50">
+            <animateTransform keyTimes="0;1" values="0 50 50;360 50 50" dur="1s" repeatCount="indefinite" type="rotate" attributeName="transform"></animateTransform>
+          </circle><g></g></g></svg>
+        </button>
       </div>
     </form>
   </div>

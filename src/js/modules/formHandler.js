@@ -1,8 +1,18 @@
 const formHandler = () => {
   const form = document.querySelector('.contact__form');
-  const checkbox = document.querySelector('.contact__checkbox')
+  const modal = document.querySelector('.contact__modal')
 
-  const formSend = async e => {
+  const showModal = (message) => {
+    modal.style.right = '1.25rem';
+    modal.textContent = message;
+    
+    setTimeout(() => {
+      modal.style.right = '-100%';
+      modal.textContent = ''
+    }, 2300);
+  }
+
+  const formSend = async (e) => {
     e.preventDefault()
 
     const formData = new FormData(form)
@@ -14,19 +24,17 @@ const formHandler = () => {
     })
 
     if (response.ok) {
-      alert('Message sent')
+      showModal('Message sent')
       form.classList.remove('loading')
       form.reset()
     } else {
-      alert('Error')
+      showModal('Error sending message')
       form.classList.remove('loading')
     }
   }
   
   form.addEventListener('submit', e => {
-    if (checkbox.checked) {
-      formSend(e);
-    }
+    formSend(e);
   })
 }
 

@@ -17,6 +17,25 @@
     border-radius: 50%;
   }
 
+  &__modal {
+    position: fixed;
+    z-index: 4;
+    bottom: 5rem;
+    right: -100%;
+    width: 100%;
+    max-width: 18.75rem;
+    height: 7.5rem;
+    background: var(--white-01);
+    border-radius: .5rem;
+    border: 1px solid var(--white-01);
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    transition: var(--transition);
+  }
+
   &__title {
     text-align: center;
     position: relative;
@@ -34,6 +53,19 @@
     max-width: 600px;
     margin: 0 auto;
     padding-top: 3.75rem;
+
+    &.loading .contact__submit {
+      opacity: 0.5;
+      pointer-events: none;
+
+      & span {
+        display: none;
+      }
+      
+      & svg {
+        opacity: 1;
+      }
+    }
   }
 
   &__row {
@@ -114,18 +146,42 @@
     width: 100%;
     max-width: 10.75rem;
     height: 2.875rem;
-    font-weight: 600;
-    font-size: 1.25rem;
-    text-transform: uppercase;
-    color: var(--red-600);
     transition: var(--transition);
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     @media (any-hover: hover) {
       &:hover {
         background: var(--red-600);
         box-shadow: 0 1px 50px 0 rgba(164, 8, 6, 0.75);
-        color: #111;
+
+        & span {
+          color: #111;
+        }
       }
+    }
+
+    & span {
+      font-weight: 600;
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      color: var(--red-600);
+    }
+    
+    & svg {
+      position: absolute;
+      opacity: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    &__modal {
+      font-size: 1.125rem;
+      max-width: 15.625rem;
+      height: 6.25rem;
     }
   }
 }
