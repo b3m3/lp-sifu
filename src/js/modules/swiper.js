@@ -6,6 +6,7 @@ export const swiperPath = () => {
 		modules: [Pagination, Parallax],
 		loop: true,
 		parallax: true,
+		speed: 600,
 		pagination: {
 			el: '.swiper-pagination',
 			clickable: true,
@@ -17,6 +18,7 @@ export const swiperGallery = () => {
 	const swiper = new Swiper('.gallery__swiper', {
 		modules: [Pagination, Navigation],
 		loop: true,
+		speed: 600,
 		breakpoints: {
 			320: {
 				spaceBetween: 20,

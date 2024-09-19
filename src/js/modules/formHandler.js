@@ -8,7 +8,7 @@ const formHandler = () => {
     const formData = new FormData(form)
     form.classList.add('loading')
 
-    const response = await fetch('../php/server.php', {
+    const response = await fetch('./php/server.php', {
       method: 'POST',
       body: formData,
     })
