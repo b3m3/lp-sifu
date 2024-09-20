@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.svg">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Gulp</title>
+</head>
+
+<body>
+  <div class="app" id="app">
+    <!-- header -->
+    <header class="header">
+  <div class="container big">
+    <div class="header__main">
+
+      <div class="header__col">
+        <a class="header__logo" href="#">
+          <img src="img/header/logo.png" alt="logo">
+        </a>
+      </div>
+
+      <div class="header__col menu-col">
+        <!-- NAVBAR -->
+
+        <nav class="header__nav">
+          <ul class="header__nav_list">
+            <li class="header__nav_item">
+              <a class="header__nav_link" href="#">Home</a>
+            </li>
+            <li class="header__nav_item"></li>
+              <a class="header__nav_link" href="#">About</a>
+            </li>
+            <li class="header__nav_item"></li>
+              <a class="header__nav_link" href="#">News</a>
+            </li>
+            <li class="header__nav_item"></li>
+              <a class="header__nav_link" href="#">Gallery</a>
+            </li>
+            <li class="header__nav_item"></li>
+              <a class="header__nav_link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__buttons">
+          <!-- LANG -->
+
+          <div class="header__buttons_lang lang-header">
+            <button class="lang-header__button">
+              <span class="lang-header__lang">EN</span>
+
+              <svg class="lang-header__icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L6 6L11 1" stroke="white" stroke-width="2" />
+              </svg>
+            </button>
+
+            <ul class="lang-header__list">
+              <li class="lang-header__item">EN</li>
+              <li class="lang-header__item">UA</li>
+              <li class="lang-header__item">ES</li>
+            </ul>
+          </div>
+
+          <!-- BUY NOW BTN -->
+
+          <button class="header__buttons_buy">
+            Buy now
+          </button>
+        </div>
+      </div>
+
+      <div class="header__col">        
+        <button class="header__buttons_hamburger menu-hamburger">
+          <i></i><i></i><i></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <!-- wrapp -->
+    <div class="app-wrapp">
+      <main class="main">
+
+        <!-- hero -->
+        <section class="hero">
+  <div class="hero__main">
+    <img class="hero__background" src="img/hero/img_background.webp" alt="background">
+    <img class="hero__logo" src="img/hero/img_logo_m.webp" alt="background">
+    <img class="hero__person" src="img/hero/img_person.png" alt="background">
+
+    <div class="hero__body">
+      <h4 class="hero__title">AVAILABLE ON</h4>
+
+      <ul class="hero__list">
+        <li class="hero__item">
+          <a class="hero__link" href="https://www.playstation.com/en-us/" target="_blank" rel="noopener noreferrer">
+            <img class="hero__icon" src="img/hero/icon_ps.svg" alt="Play station">
+          </a>
+        </li>
+        <li class="hero__item">
+          <a class="hero__link" href="https://www.epicgames.com/site/en-US/home" target="_blank" rel="noopener noreferrer">
+            <img class="hero__icon" src="img/hero/icon_epic.svg" alt="Epic Game">
+          </a>
+        </li>
+        <li class="hero__item">
+          <a class="hero__link" href="https://www.nintendo.com/us/" target="_blank" rel="noopener noreferrer">
+            <img class="hero__icon" src="img/hero/icon_nintendo.svg" alt="Nintendo">
+          </a>
+        </li>
+        <li class="hero__item">
+          <a class="hero__link" href="https://store.steampowered.com/about/" target="_blank" rel="noopener noreferrer">
+            <img class="hero__icon" src="img/hero/icon_steam.svg" alt="Steam">
+          </a>
+        </li>
+        <li class="hero__item">
+          <a class="hero__link" href="https://www.xbox.com/" target="_blank" rel="noopener noreferrer">
+            <img class="hero__icon" src="img/hero/icon_xbox.svg" alt="Xbox">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+        <!-- path -->
+        <section class="path">
+  <div class="path__main">
+    <div class="path__swiper swiper">
+      <div class="path__swiper-wrapper swiper-wrapper">
+
+        <!-- swiper-slide -->
+
+        <div class="path__swiper-slide swiper-slide">
+          <img class="path__background" src="img/path/img_1.webp" alt="background">
+
+          <div class="path__info">
+            <h2 class="path__title" data-swiper-parallax="-600" data-swiper-parallax-scale="0.15">ON THE PATH OF VENGEANCE</h2>
+            <hr class="path__line" data-swiper-parallax-opacity="0">
+            <p class="path__text" data-swiper-parallax="-1500">The hunt for the assassins of your family will take you through the hidden corners of the city, from gang-ridden suburbs to the cold hallways of corporate towers. You have one day, and countless enemies on your way. Time will be the price to pay.</p>
+          </div>
+        </div>
+
+        <!-- swiper-slide -->
+
+        <div class="path__swiper-slide path__swiper-slide_right swiper-slide">
+          <img class="path__background" src="img/path/img_2.webp" alt="background">
+
+          <div class="path__info path__info_right">
+            <h2 class="path__title" data-swiper-parallax="-600" data-swiper-parallax-scale="0.15">ADAPTATION IS THE WAY</h2>
+            <hr class="path__line" data-swiper-parallax-opacity="0">
+            <p class="path__text" data-swiper-parallax="-1500">Careful positioning and clever use of the environment to your advantage are key to your survival. Throwable objects, makeshift weapons, windows and ledges... The odds are stacked against you, you will have to use everything at your disposal to prevail.</p>
+          </div>
+        </div>
+
+        <!-- swiper-slide -->
+
+        <div class="path__swiper-slide swiper-slide">
+          <img class="path__background" src="img/path/img_3.webp" alt="background">
+
+          <div class="path__info">
+            <h2 class="path__title" data-swiper-parallax="-600" data-swiper-parallax-scale="0.15">TRAINING NEVER ENDS</h2>
+            <hr class="path__line" data-swiper-parallax-opacity="0">
+            <p class="path__text" data-swiper-parallax="-1500">Kung Fu is a path for the body and the mind. Learn from your errors, unlock unique skills, and find the strength within yourself to master the devastating techniques of Pak-Mei Kung-Fu.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+        <!-- news -->
+        <section class="news">
+  <div class="container">
+    <div class="news__main">
+
+      <i class="news__blure"></i>
+
+      <img class="news__background" src="img/news/bg.webp" alt="Background">
+
+      <div class="news__top">
+        <h2 class="news__title">LATEST NEWS • 消息</h2>
+      </div>
+
+      <div class="news__body">
+        <div class="news__left">
+          <div class="news__image">
+            <img src="img/news/img_1.webp" alt="SIFU Arenas">
+          </div>
+
+          <div class="news__row">
+            <span class="news__date">March 28, 2023</span>
+            <h3 class="news__subtitle news__subtitle_left">PATCH 1.19 & 1.20 - ARENAS & DAY 1 PATCH</h3>
+            <p class="news__text">Sifu is finally on Steam and Xbox, and the Arenas update is here!</p>
+            <a class="news__link" href="#">
+              <span>READ MORE</span>
+              <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 15L8 8L1 1" stroke="white" stroke-width="1.5" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="news__right">
+          <div class="news__row news__row_left">
+            <span class="news__date">February 3, 2023</span>
+            <h3 class="news__subtitle">REPLAY EDITOR CONTEST</h3>
+            <p class="news__text news__text_clamp">We're launching our second community contest We're launching our second community contest</p>
+            <a class="news__link" href="#">
+              <span>READ MORE</span>
+              <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 15L8 8L1 1" stroke="white" stroke-width="1.5" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="news__row news__row_left">
+            <span class="news__date">February 3, 2023</span>
+            <h3 class="news__subtitle">REPLAY EDITOR CONTEST</h3>
+            <p class="news__text news__text_clamp">We're launching our second community contest We're launching our second community contest</p>
+            <a class="news__link" href="#">
+              <span>READ MORE</span>
+              <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 15L8 8L1 1" stroke="white" stroke-width="1.5" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="news__row news__row_left">
+            <span class="news__date">February 3, 2023</span>
+            <h3 class="news__subtitle">REPLAY EDITOR CONTEST</h3>
+            <p class="news__text news__text_clamp">We're launching our second community contest We're launching our second community contest</p>
+            <a class="news__link" href="#">
+              <span>READ MORE</span>
+              <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 15L8 8L1 1" stroke="white" stroke-width="1.5" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="news__row news__row_left">
+            <span class="news__date">February 3, 2023</span>
+            <h3 class="news__subtitle">REPLAY EDITOR CONTEST</h3>
+            <p class="news__text news__text_clamp">We're launching our second community contest We're launching our second community contest</p>
+            <a class="news__link" href="#">
+              <span>READ MORE</span>
+              <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 15L8 8L1 1" stroke="white" stroke-width="1.5" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="news__row news__row_left">
+            <span class="news__date">February 3, 2023</span>
+            <h3 class="news__subtitle">REPLAY EDITOR CONTEST</h3>
+            <p class="news__text news__text_clamp">We're launching our second community contest We're launching our second community contest</p>
+            <a class="news__link" href="#">
+              <span>READ MORE</span>
+              <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 15L8 8L1 1" stroke="white" stroke-width="1.5" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="news__row news__row_left">
+            <span class="news__date">February 3, 2023</span>
+            <h3 class="news__subtitle">REPLAY EDITOR CONTEST</h3>
+            <p class="news__text news__text_clamp">We're launching our second community contest We're launching our second community contest</p>
+            <a class="news__link" href="#">
+              <span>READ MORE</span>
+              <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 15L8 8L1 1" stroke="white" stroke-width="1.5" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="news__row news__row_left">
+            <span class="news__date">February 3, 2023</span>
+            <h3 class="news__subtitle">REPLAY EDITOR CONTEST</h3>
+            <p class="news__text news__text_clamp">We're launching our second community contest We're launching our second community contest</p>
+            <a class="news__link" href="#">
+              <span>READ MORE</span>
+              <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 15L8 8L1 1" stroke="white" stroke-width="1.5" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        
+        <!-- gallery -->
+        <section class="gallery">
+  <div class="container">
+    <div class="gallery__main">
+
+      <div class="gallery__top top-gallery">
+        <h2>GALLERY • 艺术</h2>
+
+        <div class="top-gallery__buttons">
+          <button class="top-gallery__buttons_btn active">PHOTOS 相片</button>
+          <button class="top-gallery__buttons_btn">VIDEOS 影片</button>
+          <span class="top-gallery__buttons_scroll"></span>
+        </div>
+      </div>
+
+      <div class="gallery__swiper swiper">
+        <div class="gallery__swiper-wrapper swiper-wrapper">
+          <div class="gallery__swiper-slide swiper-slide">
+            <img src="img/gallery/img_1.webp" alt="Image">
+          </div>
+
+          <div class="gallery__swiper-slide swiper-slide">
+            <img src="img/gallery/img_2.webp" alt="Image">
+          </div>
+
+          <div class="gallery__swiper-slide swiper-slide">
+            <img src="img/gallery/img_3.webp" alt="Image">
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="gallery-swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</section>
+
+        <!-- available -->
+        <section class="available">
+  <div class="available__main">
+
+    <img class="available__background" src="img/available/bg.webp" alt="Background">
+
+    <i class="available__blure"></i>
+
+    <h2 class="available__title">AVAILABLE • 可用</h2>
+
+    <ul class="available__list">
+      <li class="available__item">
+        <a class="available__link" href="https://www.playstation.com/en-us/" target="_blank" rel="noopener noreferrer">
+          <img class="available__icon" src="img/available/icon_1.svg" alt="Play station">
+        </a>
+      </li>
+      <li class="available__item">
+        <a class="available__link" href="https://www.epicgames.com/site/en-US/home" target="_blank" rel="noopener noreferrer">
+          <img class="available__icon" src="img/available/icon_2.svg" alt="Epic Game">
+        </a>
+      </li>
+      <li class="available__item">
+        <a class="available__link" href="https://www.nintendo.com/us/" target="_blank" rel="noopener noreferrer">
+          <img class="available__icon" src="img/available/icon_3.svg" alt="Nintendo">
+        </a>
+      </li>
+      <li class="available__item">
+        <a class="available__link" href="https://store.steampowered.com/about/" target="_blank" rel="noopener noreferrer">
+          <img class="available__icon" src="img/available/icon_4.svg" alt="Steam">
+        </a>
+      </li>
+      <li class="available__item">
+        <a class="available__link" href="https://www.xbox.com/" target="_blank" rel="noopener noreferrer">
+          <img class="available__icon" src="img/available/icon_5.svg" alt="Xbox">
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <!-- contact -->
+        <section class="contact">
+  <div class="contact__main">
+
+    <i class="contact__blure"></i>
+    <div class="contact__modal"></div>
+
+    <h2 class="contact__title">NEWSLETTER • 通讯</h2>
+
+    <form class="contact__form" action="#">
+      <div class="contact__row">
+        <input class="contact__input" type="email" name="email" id="email" placeholder="Enter e-mail address" required>
+      </div>
+
+      <div class="contact__row">
+        <input class="contact__checkbox" type="checkbox" name="checkbox" id="checkbox" required>
+        <span class="contact__checkmark"></span>
+        <label for="checkbox">
+          I agree to the <a class="contact__link" href="#">privacy policy</a> and agree to receive occasional news from Kepler and its studios
+        </label>
+      </div>
+
+      <div class="contact__row">
+        <button class="contact__submit">
+          <span>subscribe</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" width="40" height="40" style="shape-rendering: auto; display: block; background: transparent;" xmlns:xlink="http://www.w3.org/1999/xlink"><g><circle stroke-dasharray="164.93361431346415 56.97787143782138" r="35" stroke-width="10" stroke="#a40806" fill="none" cy="50" cx="50">
+            <animateTransform keyTimes="0;1" values="0 50 50;360 50 50" dur="1s" repeatCount="indefinite" type="rotate" attributeName="transform"></animateTransform>
+          </circle><g></g></g></svg>
+        </button>
+      </div>
+    </form>
+  </div>
+</section> 
+      </main>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer" id="footer">
+  <div class="footer__main">
+    <div class="footer__top top-footer">
+      <h3 class="top-footer__title">FOLLOW US</h3>
+
+      <ul class="top-footer__socials">
+        <li class="top-footer__socials_item">
+          <a class="top-footer__socials_link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+            <img class="top-footer__socials_icon img-icon" src="img/follow/facebook.svg" alt="facebook">
+          </a>
+        </li>
+        <li class="top-footer__socials_item">
+          <a class="top-footer__socials_link" href="https://x.com/settings/account" target="_blank" rel="noopener noreferrer">
+            <img class="top-footer__socials_icon img-icon" src="img/follow/x.svg" alt="X">
+          </a>
+        </li>
+        <li class="top-footer__socials_item">
+          <a class="top-footer__socials_link" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+            <img class="top-footer__socials_icon img-icon" src="img/follow/youtube.svg" alt="YouTube">
+          </a>
+        </li>
+        <li class="top-footer__socials_item">
+          <a class="top-footer__socials_link" href="https://www.reddit.com/" target="_blank" rel="noopener noreferrer">
+            <img class="top-footer__socials_icon img-icon" src="img/follow/reddit.svg" alt="Reddit">
+          </a>
+        </li>
+      </ul>
+
+      <ul class="top-footer__sponsors">
+        <li class="top-footer__sponsors_item">
+          <a class="top-footer__sponsors_link" href="https://sloclap.com/en" target="_blank" rel="noopener noreferrer">
+            <img class="top-footer__sponsors_icon img-icon" src="img/follow/icon_1.svg" alt="Sloclap">
+          </a>
+        </li>
+        <li class="top-footer__sponsors_item">
+          <a class="top-footer__sponsors_link" href="https://kepler.gl/" target="_blank" rel="noopener noreferrer">
+            <img class="top-footer__sponsors_icon img-icon" src="img/follow/icon_2.svg" alt="Kepler">
+          </a>
+        </li>
+        <li class="top-footer__sponsors_item">
+          <a class="top-footer__sponsors_link" href="https://www.unrealengine.com/en-US" target="_blank" rel="noopener noreferrer">
+            <img class="top-footer__sponsors_icon img-icon" src="img/follow/icon_3.svg" alt="Unreal">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer__bottom">
+      <span class="footer__bottom_label">LOREM IPSUM - ALL RIGHTS RESERVED</span>
+    </div>
+  </div>
+</footer>
+  </div>
+
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>
