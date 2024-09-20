@@ -28,7 +28,8 @@
     background: var(--white-01);
     border-radius: .5rem;
     border: 1px solid var(--white-01);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(1.25rem);
+    -webkit-backdrop-filter: blur(1.25rem);
     display: flex;
     justify-content: center;
     align-items: center;

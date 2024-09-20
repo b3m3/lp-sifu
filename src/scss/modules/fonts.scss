@@ -19,19 +19,19 @@
 @font-face {
 	font-family: 'FixelText';
 	font-display: swap;
-	src: url("../fonts/FixelText-Bold.woff2") format("woff2"),
-	 url("../fonts/FixelText-Bold.woff") format("woff"),
-	 url("../fonts/FixelText-Bold.ttf") format("ttf"); 
-	font-weight: 700;
+	src: url("../fonts/FixelText-Regular.woff2") format("woff2"),
+	 url("../fonts/FixelText-Regular.woff") format("woff"),
+	 url("../fonts/FixelText-Regular.ttf") format("ttf"); 
+	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'FixelText';
 	font-display: swap;
-	src: url("../fonts/FixelText-Regular.woff2") format("woff2"),
-	 url("../fonts/FixelText-Regular.woff") format("woff"),
-	 url("../fonts/FixelText-Regular.ttf") format("ttf"); 
-	font-weight: 400;
+	src: url("../fonts/FixelText-Thin.woff2") format("woff2"),
+	 url("../fonts/FixelText-Thin.woff") format("woff"),
+	 url("../fonts/FixelText-Thin.ttf") format("ttf"); 
+	font-weight: 100;
 	font-style: normal;
 }
 @font-face {
@@ -46,9 +46,9 @@
 @font-face {
 	font-family: 'FixelText';
 	font-display: swap;
-	src: url("../fonts/FixelText-Thin.woff2") format("woff2"),
-	 url("../fonts/FixelText-Thin.woff") format("woff"),
-	 url("../fonts/FixelText-Thin.ttf") format("ttf"); 
-	font-weight: 100;
+	src: url("../fonts/FixelText-Bold.woff2") format("woff2"),
+	 url("../fonts/FixelText-Bold.woff") format("woff"),
+	 url("../fonts/FixelText-Bold.ttf") format("ttf"); 
+	font-weight: 700;
 	font-style: normal;
 }
