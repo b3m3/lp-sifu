@@ -10,6 +10,15 @@
 @font-face {
 	font-family: 'FixelText';
 	font-display: swap;
+	src: url("../fonts/FixelText-Bold.woff2") format("woff2"),
+	 url("../fonts/FixelText-Bold.woff") format("woff"),
+	 url("../fonts/FixelText-Bold.ttf") format("ttf"); 
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'FixelText';
+	font-display: swap;
 	src: url("../fonts/FixelText-Medium.woff2") format("woff2"),
 	 url("../fonts/FixelText-Medium.woff") format("woff"),
 	 url("../fonts/FixelText-Medium.ttf") format("ttf"); 
@@ -41,14 +50,5 @@
 	 url("../fonts/FixelText-SemiBold.woff") format("woff"),
 	 url("../fonts/FixelText-SemiBold.ttf") format("ttf"); 
 	font-weight: 600;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'FixelText';
-	font-display: swap;
-	src: url("../fonts/FixelText-Bold.woff2") format("woff2"),
-	 url("../fonts/FixelText-Bold.woff") format("woff"),
-	 url("../fonts/FixelText-Bold.ttf") format("ttf"); 
-	font-weight: 700;
 	font-style: normal;
 }
