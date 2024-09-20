@@ -18,16 +18,21 @@ const formHandler = () => {
     const formData = new FormData(form)
     form.classList.add('loading')
 
-    const response = await fetch('./php/server.php', {
-      method: 'POST',
-      body: formData,
-    })
-
-    if (response.ok) {
-      showModal('Message sent')
-      form.classList.remove('loading')
-      form.reset()
-    } else {
+    try {
+      const response = await fetch('./php/server.php', {
+				method: 'POST',
+				body: formData,
+			})
+      
+      if (response.ok) {
+        showModal('Message sent')
+        form.classList.remove('loading')
+        form.reset()
+      } else {
+        showModal('Error sending message')
+        form.classList.remove('loading')
+      }
+    } catch {
       showModal('Error sending message')
       form.classList.remove('loading')
     }
